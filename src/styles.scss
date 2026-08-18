@@ -55,8 +55,8 @@ app-root {
 header,
 main,
 footer {
-  width: min(70rem, calc(100% - 3rem));
-  margin-inline: auto;
+  width: 100%;
+  padding-inline: clamp(1.25rem, 3vw, 3rem);
 }
 
 main {
