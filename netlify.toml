@@ -9,3 +9,27 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+from = "https://mikewilcome.com/*"
+to = "https://piousprogrammer.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.mikewilcome.com/*"
+to = "https://piousprogrammer.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://mikewilcome.info/*"
+to = "https://piousprogrammer.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.mikewilcome.info/*"
+to = "https://piousprogrammer.com/:splat"
+status = 301
+force = true
