@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Task Warden">
-  <rect width="32" height="32" fill="#f4f5f7"/>
+<!--  <rect width="32" height="32" fill="#f4f5f7"/>-->
   <!-- Inset shield; same idea as header brand-mark -->
   <path
     fill="#244353"
