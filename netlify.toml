@@ -6,30 +6,36 @@
   NODE_VERSION = "22"
 
 [[redirects]]
+  from = "https://piousprogrammer.com/*"
+  to = "https://mikewilcome.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.piousprogrammer.com/*"
+  to = "https://mikewilcome.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.mikewilcome.com/*"
+  to = "https://mikewilcome.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://mikewilcome.info/*"
+  to = "https://mikewilcome.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.mikewilcome.info/*"
+  to = "https://mikewilcome.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[redirects]]
-from = "https://mikewilcome.com/*"
-to = "https://piousprogrammer.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://www.mikewilcome.com/*"
-to = "https://piousprogrammer.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://mikewilcome.info/*"
-to = "https://piousprogrammer.com/:splat"
-status = 301
-force = true
-
-[[redirects]]
-from = "https://www.mikewilcome.info/*"
-to = "https://piousprogrammer.com/:splat"
-status = 301
-force = true
