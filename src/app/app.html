@@ -63,6 +63,7 @@
         <ul class="skills panel-body">
           <li>Java</li>
           <li>Spring</li>
+          <li>Apache Camel</li>
           <li>JPA/Hibernate</li>
           <li>Angular</li>
           <li>Kotlin Multiplatform</li>
@@ -73,6 +74,7 @@
           <li>Docker</li>
           <li>Kubernetes</li>
           <li>AWS</li>
+          <li>AI/Prompt Engineering</li>
         </ul>
       </div>
 
@@ -111,7 +113,13 @@
       <div class="panel">
         <h2 class="panel-title">Personal Projects</h2>
         <p class="panel-sub">Applications I've Deployed and Maintained</p>
-        <div class="panel-body">
+        <div
+          #projectList
+          class="panel-body"
+          [class.can-scroll-up]="canScrollUp()"
+          [class.can-scroll-down]="canScrollDown()"
+          (scroll)="onProjectListScroll()"
+        >
           <a
             class="project-card"
             href="https://taskwarden.piousprogrammer.com"
@@ -147,6 +155,31 @@
             <div>
               <h3>The Crafting Llama</h3>
               <p>Personalized embroidery website for my wife.</p>
+              <span class="project-card-cta">
+                View Project
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14 5h5v5M19 5l-9 9M10 5H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </a>
+          <a
+            class="project-card"
+            href="https://textscan.piousprogrammer.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="project-thumb" src="/text-scan.svg" alt="" />
+            <div>
+              <h3>Text Scan</h3>
+              <p>Converts an image to text with Tesseract and custom scraping.</p>
               <span class="project-card-cta">
                 View Project
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
